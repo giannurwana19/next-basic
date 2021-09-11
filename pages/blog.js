@@ -2,8 +2,8 @@ import Layout from '../components/Layout';
 
 export default function blog() {
   return (
-    <Layout>
-      <h1 className="title">selamat datang</h1>
+    <Layout pageTitle="Blog page">
+      <h1 className="title">Blog Page</h1>
     </Layout>
   );
 }
