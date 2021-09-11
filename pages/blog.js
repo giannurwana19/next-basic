@@ -4,7 +4,7 @@ export default function blog() {
   return (
     <div>
       <Header />
-      <h1>selamat datang</h1>
+      <h1 className="title">selamat datang</h1>
     </div>
   );
 }
