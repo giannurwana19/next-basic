@@ -13,7 +13,7 @@
   },
   "plugins": ["react"],
   "rules": {
-    "eslint linebreak-style": ["windows"],
+    "linebreak-style": ["windows"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "arrow-body-style": ["error", "always"]
