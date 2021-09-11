@@ -1,10 +1,9 @@
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 export default function blog() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1 className="title">selamat datang</h1>
-    </div>
+    </Layout>
   );
 }

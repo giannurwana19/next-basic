@@ -4,8 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  max-width: 1400px;
+  max-width: 992px;
   margin: auto;
+  height: 100%;
 }
 
 a {
@@ -19,4 +20,8 @@ a {
 
 .title {
   color: crimson;
+}
+
+#__next {
+  height: 100%;
 }
