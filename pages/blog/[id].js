@@ -1,13 +1,15 @@
 import Layout from '../../components/Layout';
 import { useRouter } from 'next/router';
 
-export default function BlogDetail() {
+export default function BlogDetail({ blog }) {
   const router = useRouter();
   const { id } = router.query;
 
   return (
     <Layout>
       <h1>Blog detail {id}</h1>
+      <h4>{blog.title}</h4>
+      <p>{blog.body}</p>
     </Layout>
   );
 }
@@ -17,7 +19,7 @@ export async function getStaticPaths() {
   const posts = await res.json();
 
   const paths = posts.map(post => ({
-    params: { id: post.id },
+    params: { id: String(post.id) },
   }));
 
   return { paths, fallback: false };
